@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Movie Database</h1>
+        <input type="text" id="searchInput" placeholder="Search movies...">
+    </header>
+    <main id="movieList">
+        <!-- Movies will be dynamically added here -->
+    </main>
+
+    <script src="scripts.js"></script>
+    
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f0f0f0;
+    }
+    
+    header {
+        background-color: #333;
+        color: #fff;
+        padding: 1rem;
+        text-align: center;
+    }
+    
+    header h1 {
+        margin: 0;
+    }
+    
+    #searchInput {
+        padding: 0.5rem;
+        margin-top: 1rem;
+        width: 100%;
+        max-width: 400px;
+        box-sizing: border-box;
+    }
+    
+    main {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        padding: 1rem;
+    }
+    
+    .card {
+        background-color: #fff;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        width: 250px;
+        margin: 1rem;
+        overflow: hidden;
+    }
+    
+    .card img {
+        width: 100%;
+        height: auto;
+    }
+    
+    .card .info {
+        padding: 1rem;
+    }
+    
+    .card h2 {
+        margin-top: 0;
+    }
+    
+    .card p {
+        font-size: 0.9rem;
+        line-height: 1.4;
+    }
+</body>
+</html>

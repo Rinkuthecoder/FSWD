@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+
+    <title>Document</title>
+    <style>
+        div{
+            width: 100px;
+            height:100px;
+            background-color: red;
+            transition-property: width;
+            transition-duration: 2s;
+            transition-timing-function: linear;
+            transition-delay: 1s;
+            position: relative;
+            animation-iteration-count: 3;
+            animation-direction: reverse;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            animation: myfirst 5s linear 2s infinite alternate;
+
+        }
+        div{
+            width:100px;
+            height: 50px;
+            font-weight: bold;
+            animation: mymove 5s;
+            animation-fill-mode:forwards
+        }
+        div{transition: width 2s linear 1s;
+        }
+        div{
+            width:300px;
+            height:100px;
+            background-color: yellow;
+            border:1px solid balck;
+            transfrom:translate(50px,100px);
+        }
+        div#mydiv{
+            transform:rotate(20deg);
+        }
+        div{
+            animation-name: example;
+            animation-duration: 4s;
+            animation-duration: 3s;
+            animation-duration: 5s;
+        }
+
+        #div1 {animation-timing-function: linear;}
+        #div2 {animation-timing-function: ease;}
+        #div3 {animation-timing-function: ease-in;}
+        #div4 {animation-timing-function: ease-out;}
+        #div5 {animation-timing-function: ease-in-out;}
+
+
+        div:hover{
+            width:300px
+        }
+        @keyframes example {
+            from {background-color: red;}
+            to {background-color: yellow;}
+        }
+        @keyframes example {
+            0% {background-color: red;left:0px;top:0px;}
+            25% {background-color: yellow;left:200px;top:0px;}
+            75% {background-color: green;left:0px;top:200px;}
+            50% {background-color: blue;left:200px;top:200px;}
+            100% {background-color: red;left:0px;top:0px;}
+        }
+        @keyframes mymove {
+            from {left: 0px;}
+            to {left:300px;}
+        }
+        
+        @keyframes example{
+            from {top:0px;}
+            to {top:200px; background-color: blue;}
+        }
+        
+        div{
+
+            animation-duration: 4s;
+        }
+        {
+            animation-delay:2s;
+        }
+       
+
+
+    </style>
+</head>
+<body>
+    <h1>CSS Animation</h1>
+    <h1>The transition Properties Specified One by One</h1>
+    <h1>the translate() method</h1>
+    <h1>the rotate()method</h1>
+
+
+
+<div id="div1">linear</div>
+<div id="div2">ease</div>
+<div id="div3">ease-in</div>
+<div id="div4">ease-out</div>
+<div id="div5">ease-in-out</div>this div element is rotated clockwise 20 degrees.
+
+
+<div id="mydiv">this div element is rotated clockwise 20 degrees</div> 
+<div>this a normal div element</div>
+
+
+<div>This div element is moved 50 pixels to the right, and 100 pixels down from its current position.</div>
+    <p>the rotate() method rotates an element clackwise or counter-clockwise.</p>
+    
+<div></div>
+
+
+</body>
+</html>

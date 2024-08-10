@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+.img-container {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+img:hover {
+  transform: scale(1.1);
+}
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+</style>
+</head>
+<body>
+
+<h2>Images Side by Side</h2>
+<p>Float images side by side:</p>
+
+<div class="clearfix">
+  <div class="img-container">
+  <img src="WhatsApp Image 2024-07-23 at 12.13.31_fef9e9ee 2.jpg" alt="Italy" style="width:100%">
+  </div>
+  <div class="img-container">
+  <img src="WhatsApp Image 2024-07-23 at 12.13.18_0951d0a4 1.jpg" alt="Forest" style="width:100%">
+  </div>
+  <div class="img-container">
+  <img src="WhatsApp Image 2024-07-23 at 12.13.49_373236b3 3.jpg" alt="Mountains" style="width:100%">
+  </div>
+</div>
+
+<p>Note that we also use the clearfix hack to take care of the layout flow, and that we add the box-sizing property to make sure that the image container doesn't break due to extra padding. Try to remove this code to see the effect.</p>
+
+</body>
+</html>

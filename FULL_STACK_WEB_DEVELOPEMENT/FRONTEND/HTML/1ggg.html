@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+              
+.float{
+    transition: .5s, color .10s;
+    -webkit-transition: .5s, color .10s;
+    -moz-transition: .5s, color .10s;
+    padding:50px;
+    background-color: tomato;
+    width:200px;
+    text-align: center;
+    border-radius: 10px;
+
+}
+.float:hover{
+    box-shadow: 0 8px 8px 0 #000000,0 8px 8px 0 #000000;
+    transform: translate(0px,5px);
+    -webkit-transform: translate(0px,5px);
+    -moz-transform:translate(0px,5px);
+}
+                         
+.skew{
+    transition: .5s, color .10s;
+        -webkit-transition: .5s, color .10s;
+        -moz-transition: .5s, color .10s;
+        padding: 50px;
+        background-color: blueviolet;
+        width: 200px;
+        text-align: center;
+        border-radius: 10px;
+}
+.skew:hover{
+    transform: skew(30deg, 20deg);
+        -webkit-transform: skew(30deg, 20deg);
+        -moz-transform: skew(30deg, 20deg);
+}
+                   
+.rotate-180{
+    transition: .5s, color .10s;
+    -webkit-transition: .5s, color .10s;
+    -moz-transition: .5s, color .10s;
+    padding: 50px;
+    background-color: aqua;
+    width: 300px;
+    text-align: centre;
+    border-radius: 15px;
+}
+.rotate-180:hover{
+    transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+}
+              
+            
+    </style>
+</head>
+<body>
+<div class="float"></div>
+<div class="skew"></div>
+<div class="rotate-180"></div>
+</body>
+</html>

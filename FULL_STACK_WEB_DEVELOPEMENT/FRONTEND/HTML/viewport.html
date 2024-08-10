@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            position: relative;width: 50%;
+        }
+
+        .image {
+            display:block;
+            width: 100%;
+            height: auto;
+            opacity: 1;
+            transition: .5s ease;
+            backface-visibility: hidden;
+        }
+
+        .middle {
+            transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+
+        }
+
+        .container:hover .image {
+  opacity: 0.3;
+}
+
+.container:hover .middle {
+  opacity: 1;
+}
+
+
+
+        .overlay {
+            position: absolute;top: 0;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 100%;
+            width: 100%;
+            opacity: 0;
+            transform: .5s ease;
+            background-color: cadetblue; 
+        }
+
+        .container:hover .overlay {
+            opacity: 1;
+        }
+
+        .text {
+            color: white;
+            font-size: 20px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            -webkit-transform: translate(-50%,-50%,)
+            -ms-transform: translate(-50%,-50%)
+            transform: translate(-50%,-50%)
+            text-align: center;
+            padding: 16px 32px;
+        }
+    </style>
+</head>
+<body>
+    
+    <h2>fade in overlay</h2>
+    <p>hover over the image to see the effect.</p>
+
+    <div class="container">
+        <img src="WhatsApp Image 2024-07-23 at 12.11.03_4c4308d5.jpg" alt="avatar" class="image">
+        <div class="overlay"></div>
+        <div class="text">hello world</div>
+</body>
+</html>

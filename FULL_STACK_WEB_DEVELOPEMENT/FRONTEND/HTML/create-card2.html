@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+div.polaroid {
+  width: 250px;
+  box-shadow: 5px 4px 8px 10px rgba(190, 6, 150, 0.662), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  text-align: center;
+}
+
+div.container {
+  padding: 10px;
+}
+
+.polaroid:hover {
+    transform: scale(1.6);
+    margin-left: 200px;
+    margin-top: 200px;
+    transition: all ease-in-out 1s;
+
+}
+
+h1 {
+    text-shadow: 12px 10px 13px rgb(8, 10, 150);
+}
+.text {
+    text-shadow: 12px 10px 10px rgb(63, 9, 113)
+}
+</style>
+</head>
+<body>
+
+<h1>Create Polaroid Images</h1>
+
+<p class="text" >
+    The box-shadow property can be used to create polaroid images:</p>
+
+<div class="polaroid">
+  <img src="tree.png" alt="Norway" style="width:100%">
+  <div class="container">
+    <p>Hardanger, Norway</p>
+  </div>
+</div>
+
+</body>
+</html>
